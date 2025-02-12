@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "MuseoModerno", serif;
+}
+
+.container{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.header{
+   display: flex;
+   justify-content: space-between;
+   align-content: center;
+   span{
+    display: block;
+    color:#fff;
+    margin-top: 7px;
+  
+font-weight: 500;
+font-size: 18px;
+line-height: 28.62px;
+letter-spacing: 0px;
+text-align: center;
+
+   }
+   
+}
+.promo{
+    background: url(../img/bg.jpg) center center / cover no-repeat;
+    min-height: 650px;
+    padding: 21px 0 93px 0;
+  
+    
+}
+.header_offical{
+font-weight: 500;
+font-size: 12px;
+line-height: 12px;
+letter-spacing: 0px;
+text-align: center;
+color:#fff;
+
+
+}
+
+.header_phone{
+    color: #fff;
+    display: block;
+    font-weight: 700;
+font-size: 18px;
+line-height: 18px;
+letter-spacing: 0px;
+text-align: right;
+text-decoration: none;
+
+
+} 
+.button{
+    background-color: #C70101;
+    color: #fff;
+    text-transform: uppercase;
+    width: 153px;
+height: 32px;
+border-radius: 5px;
+margin-top: 4px;
+border: none;
+font-weight: 500;
+font-size: 12px;
+line-height: 19.08px;
+letter-spacing: 0px;
+text-align: center;
+&:hover{
+    color:#fff;
+    text-decoration: none;
+
+}
+
+}
+
+.header_contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
