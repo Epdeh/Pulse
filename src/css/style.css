@@ -29,7 +29,7 @@ text-align: center;
 }
 .promo{
     background: url(../img/bg.jpg) center center / cover no-repeat;
-    min-height: 650px;
+    max-height: 650px;
     padding: 21px 0 93px 0;
   
     
@@ -84,3 +84,139 @@ text-align: center;
     flex-direction: column;
     align-items: flex-end;
 }
+
+.promo_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    margin-top: 91px;
+}
+
+.promo_header{
+    color:#fff;
+font-weight: 700;
+font-size: 42px;
+line-height: 42px;
+letter-spacing: 0px;
+text-align: right;
+text-transform: uppercase;
+
+
+}
+.promo_subheder{
+font-weight: 500;
+font-size: 24px;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: right;
+color:#fff;
+text-transform: uppercase;
+margin-top: 17px;
+}
+
+.promo_icons{
+    margin-top: 60px;
+    width: 424px;
+    display: flex;
+justify-content: space-between;
+}
+.promo_icon{
+    width: 108px;
+    text-align: center;
+    color:#fff;
+font-weight: 500;
+font-size: 14px;
+line-height: 14px;
+letter-spacing: 0px;
+
+
+    img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+.button_main{
+    margin-top: 65px;
+    width: 303px;
+    height: 54px;
+    color:#fff;
+font-weight: 500;
+font-size: 16px;
+line-height: 25.44px;
+letter-spacing: 0px;
+text-align: center;
+border-radius: 5px;
+
+}
+.promo_link{
+    margin-top: 8px;
+   color:#fff;
+font-weight: 500;
+font-size: 16px;
+line-height: 25.44px;
+letter-spacing: 0px;
+a{
+    color:#fff;
+
+}
+}
+
+
+.our_advantages{
+    background-color:#F6F6F6;
+    min-height: 473px;
+}
+
+.adv_title{
+    padding-top: 70px;
+    text-align: center;
+    font-weight: 700;
+font-size: 30px;
+line-height: 30px;
+letter-spacing: 0px;
+color:#0D0D0D
+
+}
+.adv_icon{
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.adv_icons{
+    color:#0D0D0D;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28.62px;
+    letter-spacing: 0px;
+    text-align: center;
+    
+
+
+
+img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    margin-top: 60px;
+}
+  
+}
+.adv_text{
+    
+font-weight: 300;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0px;
+text-align: center;
+
+}
+.adv_subtext{
+    display: flex;
+    margin-top: 20px;
+   
+   
+}
+    
+
