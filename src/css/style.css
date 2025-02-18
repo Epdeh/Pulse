@@ -2,11 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: "MuseoModerno", serif;
+
 }
 
 .container{
     max-width: 950px;
     margin: 0 auto;
+   
+    
 }
 
 .header{
@@ -25,16 +28,43 @@ letter-spacing: 0px;
 text-align: center;
 
    }
+   @media screen and (max-width:576px) {
+    display:block;
+    margin: 0 auto;
+}
+   
    
 }
+.header_logo{
+    @media screen and (max-width:576px) {
+        display:block;
+        text-align: center;
+        margin-bottom: 10px;
+        
+    }
+}
+
+
 .promo{
     background: url(../img/bg.jpg) center center / cover no-repeat;
     max-height: 650px;
     padding: 21px 0 93px 0;
     @media screen and (max-width:768px) {
-        
-        
+        .container{
+            padding: 21px 20px 50px 20px;
+        }
+        background: url(../img/bg.jpg) left center / cover no-repeat;
+     
     }
+    @media screen and (max-width:576px) {
+        .container{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+    }
+    
+     
   
     
 }
@@ -58,6 +88,12 @@ line-height: 18px;
 letter-spacing: 0px;
 text-align: right;
 text-decoration: none;
+@media screen and (max-width:576px) {
+    display:block;
+    margin-top: 15px;
+    text-align: center;
+}
+
 
 
 } 
@@ -80,6 +116,12 @@ text-align: center;
     text-decoration: none;
 
 }
+@media screen and (max-width:576px) {
+    display:block;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
 
 }
 
@@ -87,13 +129,18 @@ text-align: center;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @media screen and (max-width:576px) {
+        display:block;
+        margin: 0 auto;
+    }
+    
 }
 
 .promo_wrapper{
     display: flex;
     flex-direction: column;
     align-items:flex-end;
-    margin-top: 91px;
+    
 }
 
 .promo_header{
@@ -104,6 +151,13 @@ line-height: 42px;
 letter-spacing: 0px;
 text-align: right;
 text-transform: uppercase;
+margin-top: 91px;
+@media screen and (max-width:576px) {
+    font-weight: 500;
+    font-size: 35px;
+    margin-top: 45px;
+    
+}
 
 
 }
@@ -164,12 +218,29 @@ a{
     color:#fff;
 
 }
+@media screen and (max-width:576px) {
+   margin: 0 auto;
+    
 }
+}
+
 
 
 .our_advantages{
     background-color:#F6F6F6;
     min-height: 473px;
+    @media screen and (max-width:768px) {
+        .container{
+            max-width: 900px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+        }
+       
+        
+        
+    }
+   
 }
 
 .adv_title{
@@ -179,7 +250,8 @@ a{
 font-size: 30px;
 line-height: 30px;
 letter-spacing: 0px;
-color:#0D0D0D
+color:#0D0D0D;
+
 
 }
 .adv_wrapper{
@@ -199,6 +271,12 @@ margin-top: 35px;
 img{
     width: 70px;
     height: 70px;
+}
+@media screen and (max-width:768px) {  
+    width: 230px;
+    margin-top: 30px;
+        
+        
 }
 }
 .adv_name{
@@ -227,6 +305,16 @@ a{
 .request{
     background: url(../img/bg2.png) center center / cover no-repeat; 
     min-height: 690px;
+    @media screen and (max-width:768px) {
+        .container{
+            max-width: 900px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        min-height: 600px;
+        
+        
+    }
 }
 
 .request_title{
@@ -236,6 +324,10 @@ font-weight: 700;
 font-size: 36px;
 line-height: 54px;
 letter-spacing: 0px;
+@media screen and (max-width:768px) {
+        padding-top: 50px;
+        
+}
 
 
 }
