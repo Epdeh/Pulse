@@ -34,3 +34,14 @@ document.querySelector('.prev').addEventListener('click', function  (){
 document.querySelector('.next').addEventListener('click', function  (){
   slider.goTo('next');
 });
+(function($) {
+  $(function() {
+    
+    $('ul.catalog_tabs').on('click', 'li:not(.catalog_tabs-active)', function() {
+      $(this)
+        .addClass('catalog_tabs-active').siblings().removeClass('catalog_tabs-active')
+        .closest('div.container').find('div.catalog_content').removeClass('active').eq($(this).index()).addClass('active');
+    });
+    
+  });
+  })
