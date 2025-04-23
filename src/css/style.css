@@ -376,12 +376,26 @@ margin-top: 12px;
   
    
 }
+.feed-form .error{
+   color: #fff;
+        
+        text-align: center;
+        margin-bottom: 10px;
+      
+    
+    
+  
+    
+}
+
 
 .feed-form{
     margin-top: 35px;
     display: flex;
     flex-direction: column;
     width: 300px;
+
+
     
 
     input{
@@ -879,8 +893,40 @@ text-align: center;
 }
 
 
+.pageup{
+    display: none;
+    position: fixed;
+    right: 40px;
+    bottom:40px;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+   
 
+}
+ /* Анимция */
+ 
+@keyframes heartbeat {
+        from{
+            transform: scale(1);
+        }
+        50%{
+            transform:  scale(1.2);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
 
+.adv_heart_anim{
+    animation-name:heartbeat;
+    animation-duration: 2s;
+    animation-timing-function:ease;
+    animation-iteration-count:infinite;
+
+}
+ 
 
 
 

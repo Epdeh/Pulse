@@ -17,7 +17,7 @@
 
 </head>
 <body>
-    <div class="promo">
+    <div id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header_logo">
@@ -67,7 +67,7 @@
         </div>
     
                 <div class="adv_icons">
-                    <img src="./icons/heart.png" alt="heart">
+                    <img src="./icons/heart.png" alt="heart" class="adv_heart_anim">
                     <div class="adv_name">Заботимся о здоровье</div>
                     <div class="adv_desc">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
                 </div>
@@ -101,9 +101,9 @@
             
             </div>
             <form id="consultation_form" class="feed-form" action="#">
-                <input name="name"  required placeholder="Ваше имя" type="text">
-                <input name="phone"  required placeholder="Ваш телефон" type="number">
-                <input  name="email" required placeholder="Ваш E-mail" type="email">
+                <input name="name"   placeholder="Ваше имя" type="text">
+                <input name="phone"   placeholder="Ваш телефон" >
+                <input  name="email"  placeholder="Ваш E-mail" type="email">
                 <button  class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
                 
             </form>
@@ -474,7 +474,7 @@
         <div class="modal_desc">и мы перезвоним вам в течении 10 минут</div>
         <form class="feed-form" action="#">
             <input name="name"   placeholder="Ваше имя" type="text">
-            <input name="phone"   placeholder="Ваш телефон" type="number">
+            <input name="phone"   placeholder="Ваш телефон">
             <input  name="email"  placeholder="Ваш E-mail" type="email">
             <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             
@@ -486,7 +486,7 @@
         <div class="modal_desc">Пульсометр Polar FT1</div>
         <form class="feed-form" action="#">
             <input name="name"  required placeholder="Ваше имя" type="text">
-            <input name="phone"  required placeholder="Ваш телефон" type="number">
+            <input name="phone"  required placeholder="Ваш телефон">
             <input  name="email" required placeholder="Ваш E-mail" type="email">
             <button class="button button_submit">купить</button>
             
@@ -499,7 +499,10 @@
     </div>
     
 </div>
-            
+
+<a href="#up" class="pageup">
+    <img  src="icons/free-icon-up-arrow-4315713.png" alt="up">
+</a>
     
 
 
@@ -529,11 +532,12 @@
 
 
       <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>  -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <!-- <script src="./js/slick.min.js"></script> -->
      <script src="./js/jquery.validate.min.js"></script>
+     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="./js/script.js"></script>
      
     

@@ -92,9 +92,49 @@ document.querySelector('.next').addEventListener('click', function  (){
         valideForms('#consultation form');
         valideForms('#order form');
         valideForms('#consultation_form')
-  
+      
+        $('input[name=phone]').mask("+7 (999) 999-9999");
+      
+
+        // отправка на сервер 
+
+      $('form').submit(function(e) {
+        e.preventDefault();
+
+        if (!$(this).valid()){
+          return;
+        }
+
+        $.ajax({
+          type: "POST",
+          url: "mailer/smart.php",
+          data: $(this).serialize
+
+        }) .done(function() {
+          $(this).find("input").val(""); // Очищает поля ввода
+          $('#consultation, #order').fadeOut(); // Плавно скрывает блоки #consultation и #order
+          $('.overlay, #thanks').fadeIn('slow'); // Плавно показывает блоки .overlay и #thanks
+          $('form').trigger('reset'); // Сбрасывает форму
+        });
+        return false;
+
+      });
    
-    
+    // up
+    $(window).scroll(function(){
+        if($(this).scrollTop() >1600){
+          $('.pageup').fadeIn();
+
+        }else{
+          $('.pageup').fadeOut();
+        }
+    });
+    // плавный скрол
+    $("a[href^='#']").click(function(){
+      var _href =$(this).attr("href");
+      $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+      return false;
+    });
       
       
  
