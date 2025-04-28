@@ -791,6 +791,8 @@ font-size: 20px;
 line-height: 20px;
 letter-spacing: 0px;
 text-align: center;
+font-family: "MuseoModerno", serif;
+
 } 
 .footer_tel{
     display: block;
@@ -801,6 +803,8 @@ text-align: center;
     letter-spacing: 0px;
     text-align: center;
     margin-top: 36px;
+    color:#fff;
+    text-decoration: none;
 :hover{
     color: #fff;
 }
@@ -812,8 +816,13 @@ text-align: center;
 
 
 }
-.fbc{
-    padding-left: 90px;
+.footer_items{
+    display:flex;
+    gap: 20px;
+    
+    width: 220px;
+    padding-left: 120px;
+    
 }
 
 .overlay{
