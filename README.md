@@ -1,1 +1,1 @@
-https://pulse95.netlify.app
+https://pulse95.netlify.app/
